@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panverse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .screen {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* To prevent content from overflowing */
+        }
+        .text-box {
+            width: 60%;
+            height: 50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        #screen1 {
+            background-image: url("./images/bgc.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+
+        #screen3 {
+            background-image: url("./images/bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+
+        .content {
+            position: absolute;
+            left: 5%; 
+            bottom: 5%;
+        }
+
+        .title h1 {
+            font-size: 5em; 
+            margin: 0; 
+            color: #bce3ff; 
+        }
+
+        .title h2 {
+            font-size: 3em; 
+            margin: 0; 
+            color: #bce3ff; 
+        }
+
+        p {
+            font-size: 2em; 
+            margin: 10px 0 0; 
+            color: #0e7f85;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="screen1" class="screen">
+        <div class="content">
+            <div class="title">
+              <h1>PANVERSE</h1>
+              <h2>Robotics</h2>
+            </div>
+            <p>We wrangle drones to build spatial representations</p>
+        </div>
+    </div>
+    <!--div id="screen2" class="screen"-->
+        <!-- Video Carousel -->
+        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#videoCarousel" data-slide-to="1"></li>
+                <li data-target="#videoCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="d-block w-100" src="https://drive.google.com/uc?export=download&id=1dOkO68HxBv4QQpKxAkH_0dGP24qBb8O7" controls></video>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" src="https://drive.google.com/uc?export=download&id=1NYtQVUleEDftQYNPH9yeFsT3R-tu38dv" controls></video>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" src="https://drive.google.com/uc?export=download&id=1NYtQVUleEDftQYNPH9yeFsT3R-tu38dv" controls></video>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    <!--/div-->
+    <div id="screen3" class="screen">
+
+    </div>
+</body>
+</html>
